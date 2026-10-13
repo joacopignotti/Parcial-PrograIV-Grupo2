@@ -7,7 +7,7 @@ Testeada con Vitest + Supertest, siguiendo TDD (rojo → verde → refactor).
 
 ```bash
 npm install
-npm test            # 80 tests (unitarios + integración)
+npm test            # tests (unitarios + integración)
 npm run coverage    # cobertura
 npm run typecheck   # tsc --noEmit
 npm start           # servidor en http://localhost:3000  (PORT para cambiarlo)
