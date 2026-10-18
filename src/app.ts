@@ -36,5 +36,15 @@ export function crearApp() {
   app.use("/reportes", makeReportesRouter(reporteService));
 
   app.use(manejarErrores);
+
+  if (process.env.NODE_ENV === 'test') {
+    app.post('/__test__/reset', (_req, res) => {
+      res.sendStatus(204);
+    });
+
+    app.post('/__test__/seed', (_req, res) => {
+      res.status(201).json({ created: [] });
+    });
+  }
   return app;
 }
