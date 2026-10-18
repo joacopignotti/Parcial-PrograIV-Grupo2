@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { Pasteleria } from '../../src/models/pasteleria.js';
+import { Pasteleria } from '../../src/models/Pasteleria.js';
 
 describe('Clase Pasteleria', () => {
     it('debería inicializarse con las propiedades correctas heredadas de Producto', () => {
