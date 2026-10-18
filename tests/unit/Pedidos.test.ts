@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { Pedido, type ItemPedido } from '../../src/models/pedido.js';
+import { Pedido, type ItemPedido } from '../../src/models/Pedido.js';
 
 describe('Clase Pedido', () => {
     const mockItems: ItemPedido[] = [
