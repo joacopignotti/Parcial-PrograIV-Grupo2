@@ -1,27 +1,29 @@
 {
   "name": "parcial1-cafeteria-origen",
   "version": "1.0.0",
-  "description": "API de la Cafetería Origen - Parcial I (Programación 4, UTN FRBB)",
   "type": "module",
-  "scripts": {
-    "dev": "tsx watch src/server.ts",
-    "start": "tsx src/server.ts",
-    "test": "vitest run",
-    "test:watch": "vitest",
-    "coverage": "vitest run --coverage",
-    "typecheck": "tsc --noEmit"
-  },
+"scripts": {
+  "dev": "tsx watch src/server.ts",
+  "start": "tsx src/server.ts",
+  "build": "tsc -p tsconfig.json",
+  "test": "vitest run tests/unit tests/integration",
+  "test:watch": "vitest tests/unit tests/integration",
+  "test:e2e": "cross-env NODE_ENV=test playwright test"
+},
   "dependencies": {
     "express": "^5.3.0"
   },
-  "devDependencies": {
+"devDependencies": {
+    "@playwright/test": "^1.50.0",
     "@types/express": "^5.0.6",
-    "@types/node": "^26.6.4",
+    "@types/node": "^20.11.0",
     "@types/supertest": "^7.2.1",
-    "@vitest/coverage-v8": "^5.0.3",
+    "@vitest/coverage-v8": "^1.6.0",
+    "cross-env": "^7.0.3",
     "supertest": "^7.3.1",
     "tsx": "^4.23.15",
-    "typescript": "^7.0.2",
-    "vitest": "^5.0.3"
+    "typescript": "^5.3.3",
+    "vite": "^5.2.0",
+    "vitest": "^1.6.0"
   }
 }
