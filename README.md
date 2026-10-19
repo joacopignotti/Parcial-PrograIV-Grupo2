@@ -3,6 +3,9 @@
 API REST en TypeScript + Express para organizar los pedidos de la cafetería de Valentina.
 Testeada con Vitest + Supertest, siguiendo TDD (rojo → verde → refactor).
 
+## Link Video: 
+https://drive.google.com/file/d/1wx6JeALz1gMrj-VF06F780G8Oi_VfOaq/view?usp=drivesdk
+
 ## Cómo correrlo
 
 ```bash
